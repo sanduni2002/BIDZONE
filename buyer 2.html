@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>
+            BidZone Auction
+       </title>
+       <link rel="stylesheet" href="buyer 2.css">
+       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+       
+
+    </head>
+
+    <body>
+
+      <header class="hero">
+        <img src="logo.png">
+        <div class="search">
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="language">
+
+        <label for="language-select">Language</label>
+        <select id="language-select" name="language">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+         
+        </select>
+    </div>
+    <button class="logout-button">Logout</button>
+
+
+    </header>
+        <ul class="menu1">
+
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="item.html">Item List</a></li>   
+            <li><a href="sell.asp">Sell items</a></li>
+            <li><a href="contact.asp">Contact Us</a></li>
+            <li><a href="help.asp">Help</a></li>
+              
+        </ul>
+
+    <!-- Navbar top -->
+      <div class="navbar-top">
+        <div class="title">
+            <h1>Buyer Profile</h1>
+        </div>
+      </div>
+    <!-- End -->
+
+
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <img src="https://images.megapixl.com/6851/68519140.jpg" alt="" width="150" height="150">
+
+            <div class="name">
+                Joseph Edward
+            </div>
+            <div class="job">
+                Businessman
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    
+
+    <!-- Main -->
+    <div class="main">
+
+      <button onclick="myFunction()"  class="btn Delete">Delete Account</button>
+
+      <script>
+       function myFunction() {
+         var txt;
+         if (confirm("Are you sure?")) {
+            alert("Successfully Deleted!");
+         } else {
+           alert("Error!");
+         }
+       }
+       </script>
+
+     <button onclick="myFunction()"  class="btn editProfile">Edit Profile</button>
+
+     <script>
+       function myFunction() {
+         var txt;
+         if (confirm("Are you sure?")) {
+             alert("Please Wait!");
+       } else {
+              alert("Error!");
+       }
+      }
+     </script>
+
+       <button onclick="myFunction()"  class="btn resetPw">Reset Password</button>
+
+       <script>
+         function myFunction() {
+           var txt;
+            if (confirm("Are you sure?")) {
+                 alert("Please Wait!");
+           } else {
+                 alert("Error!");
+            }
+         }
+       </script>
+
+
+
+      <h2>IDENTITY</h2>
+        <div class="card">
+            <div class="card-body">
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Buyer ID</td>
+                            <td>:</td>
+                            <td>BI0001</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Buyer Name</td>
+                            <td>:</td>
+                            <td>Joseph edward</td>
+                        </tr>
+                        <tr>
+                            <td>Identity Card Number</td>
+                            <td>:</td>
+                            <td>200412345601</td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td>:</td>
+                            <td>2004-08-10</td>
+                        </tr>
+                        <tr>
+                            <td>Buyer E-mail</td>
+                            <td>:</td>
+                            <td>josephedward@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Contact Number</td>
+                            <td>:</td>
+                            <td>0781236547</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h2>BID ITEMS</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP70flTXuYkgj8dJLloedUZfyu-MEa_W8p3A&usqp=CAU" alt="" width="140" height="140">
+        <img src="https://realismtoday.com/wp-content/uploads/2021/04/paintings-of-mothers-Jan-Hargood.jpg" alt="" width="140" height="140">
+        <img src="https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/10/079522/1.jpg?1976" alt="" width="140" height="140">
+        <img src="https://m.media-amazon.com/images/I/71gSGL45lUL._AC_SL1500_.jpg" alt="" width="140" height="140">
+        <img src="https://anoosaara.com/wp-content/uploads/2018/06/a2b47386d725874a89ed5c55851f25da.jpg" alt="" width="140" height="140">
+
+    </div> 
+     <!-- End -->
+    
+
+
+
+    
+    <!-- Footer -->  
+      <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                  <h4>BidZone</h4>
+                  <img src="logo.png">
+                  <ul class="info">
+                    <li>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i>
+                      </span>
+                      <span>456,Park Street,Colombo 03.<br>Sri Lanka</span>
+                    </li>
+                    <li>
+                      <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                      <p><a href="tel:+94112548654">+94112548654</a></p>
+                      <p><a href="tel:+94112548700">+94112548700</a></p>
+                    </li>
+                    <li>
+                      <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                      <p><a href="mailto:bidzone@gmail.com">bidzone@gmail.com</a></p>
+                    </li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>services</h4>
+                <ul>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+       
+       <div class="terms">
+        <p><a href="terms and services">Terms and services </a></p>
+       
+       </div>
+       <div class="copyrightText">
+        <p>Copyright @ 2023 BidZone<br>
+           All Rights Reserved.
+        </p>
+  
+       </div>
+        <!-- End -->
+    </body>        
+</html>            

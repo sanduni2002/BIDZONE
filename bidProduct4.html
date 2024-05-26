@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Product </title>
+
+    <script src="countdown.js"></script>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="styleNew.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bid.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+
+        .container4 {
+            margin-top: 100px;
+            position: relative;
+        }
+
+
+
+
+        .cursor {
+            cursor: pointer;
+        }
+
+
+
+        .column2 {
+            width: 7%;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+
+
+        .containerPolicy {
+            width: 80%;
+            margin-top: 0;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+        }
+
+        .policyRow {
+            margin-top: 0;
+            margin-right: 5%;
+            margin-bottom: 0;
+            margin-left: 5%;
+        }
+
+
+        .counter {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="hero">
+        <img src="logo.png">
+        <div class="search">
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="language">
+
+        <label for="language-select">Language</label>
+        <select id="language-select" name="language">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+         
+        </select>
+    </div>
+    <button class="login-button">Login</button>
+    <button class="signup-button">Sign Up</button>
+
+
+    </header>
+
+
+<ul class="menu1">
+
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="item.html">Item List</a></li>   
+            <li><a href="sell.asp">Sell items</a></li>
+            <li><a href="contact.asp">Contact Us</a></li>
+            <li><a href="help.asp">Help</a></li>
+              
+            </ul>
+
+
+
+    <div class="container4">
+        <div class="left-column">
+            <div class="mySlides">
+                <img src="sofa2.jpg" width="75%" height="75%">
+            </div>
+
+            <div class="mySlides">
+                <img src="sofa.png" width="75%" height="75%">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://th.bing.com/th/id/OIP.1YUgYSQUZY_AOMjH9jqgcQHaHa?pid=ImgDet&w=1000&h=1000&rs=1" width="75%" height="75%">
+            </div>
+
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="column2">
+                    <img class="demo cursor" src="sofa2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Swimming pool">
+                </div>
+                <div class="column2">
+                    <img class="demo cursor" src="sofa.png" style="width:100%" onclick="currentSlide(2)" alt="Hotel Rooms">
+                </div>
+                <div class="column2">
+                    <img class="demo cursor" src="https://th.bing.com/th/id/OIP.1YUgYSQUZY_AOMjH9jqgcQHaHa?pid=ImgDet&w=1000&h=1000&rs=1" style="width:100%" onclick="currentSlide(3)" alt="Hotel Rooms">
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+
+          
+
+                <h1>L-Shaped Sectional Sofa Set 4 Seat Living Room Couch Chaise Indoor ModernBrand-new</h1>
+                <div class="bid">
+                    <br><br>
+        
+                    <p id="demo1" class="counter"></p><br />
+                </div>
+              
+              <div class="bm">
+              <input type="text" name="q" placeholder="Enter your bid amount">
+              </div><br>
+           
+              
+              <div>
+               
+                <a href="#" class="cart-btn">Enter</a>
+                
+              
+                  
+                  <a href="#" class="cart-btn">Cancel</a>
+                  
+                </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+    </script>
+
+
+    
+    <div class="containerPolicy">
+
+        <h2>Auction Policy</h2><br /><br />
+        <b>1.Registration:</b><br /><br />
+
+        <div class="policyRow">
+            • Users must register on our website before participating in auctions.<br /><br />
+            • Registration requires providing accurate personal information, including name, address, and contact details.<br /><br />
+            • Users must be at least 18 years old to register and participate in auctions.<br /><br /><br />
+        </div>
+
+        <b>2.Item Listings:</b> <br /><br />
+
+        <div class="policyRow">
+            • Sellers are responsible for providing accurate and detailed information about the items they list for auction.<br /><br />
+            • Items should be accurately described, including any defects, condition, or special characteristics.<br /><br />
+            • Sellers should upload clear and high-quality images of the items to showcase their features.<br /><br /><br />
+        </div>
+
+
+        <b>3.Bidding:</b><br /><br />
+
+        <div class="policyRow">
+            • Bidders must carefully review item descriptions, images, and any additional terms and conditions set by the seller before placing a bid.<br /><br />
+            • Bidders can place bids above the current highest bid or use automatic bidding features, if available.<br /><br />
+            • Bids are binding and cannot be retracted or modified once placed.<br /><br />
+            • Bidders should refrain from engaging in any fraudulent or manipulative bidding practices.<br /><br /><br />
+        </div>
+
+        <b>4.Winning and Payment:</b><br /><br />
+        <div class="policyRow">
+            • The highest bidder at the end of the auction will be declared the winner.<br /><br />
+            • Winners are obligated to complete the purchase and make payment for the item won, including any additional fees, such as shipping or taxes.<br /><br />
+            • Payment methods accepted will be clearly specified on the website.<br /><br />
+            • Payment must be made within a specified timeframe to secure the item.<br /><br />
+        </div>
+
+        <b>5.Disputes and Resolution:</b> <br /><br />
+        <div class="policyRow">
+            • In case of disputes between bidders or between bidders and sellers, users should contact our customer support for assistance.<br /><br />
+            • We encourage users to resolve disputes amicably and in good faith. However, if a resolution cannot be reached, our team will intervene and make a fair decision.<br /><br /><br />
+        </div>
+
+        <b>6.Prohibited Activities:</b> <br /><br />
+        <div class="policyRow">
+            • Users are strictly prohibited from engaging in any illegal, fraudulent, or unethical activities on our platform.<br /><br />
+            • Any attempts to manipulate bidding, defraud other users, or engage in any form of misconduct may result in account suspension or legal action.<br /><br /><br />
+        </div>
+
+        <b>7.Privacy and Data Protection:</b> <br /><br />
+        <div class="policyRow">
+            • We are committed to protecting the privacy and personal information of our users. Please refer to our Privacy Policy for more details on how we handle user data.<br /><br /><br />
+        </div>
+        <b>8.Amendments to the Policy:</b> *<br /><br />
+        <div class="policyRow">
+            • We reserve the right to modify or update this auction policy at any time.<br /><br />
+            • Users will be notified of any changes through our website or via email.<br /><br />
+            • Continued use of our platform after policy changes indicate acceptance of the modified terms.<br /><br />
+            • By participating in our online auctions, users agree to comply with this policy<br /><br />
+
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+               <h4>BidZone</h4>
+               <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19873404/2022/9/10/b4583fe7-8b92-45ab-bf2f-929c6944f4151662787021581VanHeusenNavyBlazer1.jpg">
+               <ul class="info">
+                 <li>
+                   <span><i class="fa fa-map-marker" aria-hidden="true"></i>
+                   </span>
+                   <span>456,Park Street,Colombo 03.<br>Sri Lanka</span>
+                 </li>
+                 <li>
+                   <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                   <p><a href="tel:+94112548654">+94112548654</a></p>
+                   <p><a href="tel:+94112548700">+94112548700</a></p>
+                 </li>
+                 <li>
+                   <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                   <p><a href="mailto:bidzone@gmail.com">bidzone@gmail.com</a></p>
+                 </li>
+               </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Company</h4>
+             <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Contact Us</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>services</h4>
+             <ul>
+               <li><a href="#">Help</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="social-links">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+     </footer>
+   
+   <div class="terms">
+    <p><a href="terms and services">Terms and services </a></p>
+   
+   </div>
+   <div class="copyrightText">
+    <p>Copyright @ 2023 BidZone<br>
+       All Rights Reserved.</p>
+
+   </div>
+
+</body>
+</html>

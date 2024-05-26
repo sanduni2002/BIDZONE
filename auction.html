@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>
+            BidZone Auction
+       </title>
+       <link rel="stylesheet" href="auction.css">
+       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+       
+
+    </head>
+
+    <body>
+
+      <header class="hero">
+        <img src="logo.png">
+        <div class="search">
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="language">
+
+        <label for="language-select">Language</label>
+        <select id="language-select" name="language">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+         
+        </select>
+    </div>
+    <button class="logout-button">Logout</button>
+
+
+    </header>
+        <ul class="menu1">
+
+            <li><a href="homeNew.php">Home</a></li>
+            <li><a href="itemList.html">Item List</a></li>   
+            <li><a href="auction.html">Sell items</a></li>
+            <li><a href="contact/contact-us.php">Contact Us</a></li>
+            <li><a href="help/help.html">Help</a></li>
+              
+        </ul>
+
+      <!-- Navbar top -->
+      <div class="navbar-top">
+        <div class="title">
+            <h1>ENTER YOUR ITEM DETAILS</h1>
+        </div>
+    </div>
+    <!-- End -->
+
+
+<!-- Main -->
+    <div class="main">
+        <div class="card">
+        <div class="card-body">
+
+        <div class="details">
+
+            <form action="/action_page.php">
+                   <label for="itemname">Item name:</label><br>
+                   <input type="text" id="itemname" name="itemname"><br><br>
+
+                   <label for="itemcategory">Item Category:</label><br>
+                   <select name="opt">
+                        <option value="a">select</option>
+                        <option value="b">Art</option>
+                        <option value="c">Beauty</option>
+                        <option value="d">Entertainment</option>
+                        <option value="e">Baskets</option>
+                   </select><br><br>
+
+                   <label for="itemmaterial">Item Material:</label><br>
+                   <input type="text" id="itemmaterial" name="itemmaterial"><br><br>
+
+                   <label for="quantity">Enter the Item Capacity:</label><br>
+                   <label for="height">Height:</label>
+                   <input type="text">
+                   <select name="opt">
+                        <option value="a">cm</option>
+                        <option value="b">m</option>
+                   </select><br>
+                   <label for="length">Length:</label>
+                  <input type="text">
+                  <select name="opt">
+                        <option value="a">cm</option>
+                        <option value="b">m</option>
+                  </select><br>
+                  <label for="width">Width:</label>
+                  <input type="text">
+                  <select name="opt">
+                        <option value="a">cm</option>
+                        <option value="b">m</option>
+                 </select><br>
+                 <label for="weight">Weight:</label>
+                 <input type="text">
+                 <select name="opt">
+                        <option value="a">kg</option>
+                        <option value="b">g</option>
+                 </select><br><br>
+      
+                <label for="suggestedprice">Suggested Price:</label><br>
+                <label for="price">Price:</label>
+                <input type="text">
+                <label for="currencytype">Currency Type:</label>
+                <select name="opt">
+                        <option value="a">USD</option>
+                        <option value="b">EUR</option>
+                        <option value="b">LKR</option>
+                        <option value="b">AUD</option>
+                        <option value="b">JPY</option>
+               </select><br><br>
+
+               <label for="condition">Conditions:</label><br>
+                        <textarea id="freeform" name="freeform" rows="3" cols="50">
+                        </textarea><br><br>
+
+               <label for="itemdescription">Item Description:</label><br>
+                         <textarea id="freeform" name="freeform" rows="3" cols="50">
+                         </textarea><br><br>
+
+               <label for="warranty">Enter the warranty time period:</label><br>
+               <label for="year">Year:</label>
+               <input type="text">
+               <label for="month">Month:</label>
+               <input type="text"><br><br>
+         </form>
+
+          
+         <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+
+         <div class="popup" id="popup">
+          <img src="https://illustoon.com/photo/7503.png">
+          <h2>Thank You!</h2>
+          <p>Your details has been successfully submitted.  Thanks!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+         </div>
+
+         <script>
+          let popup= document.getElementById("popup");
+
+          function openPopup(){
+            popup.classList.add("open-popup");
+          }
+          function closePopup(){
+            popup.classList.remove("open-popup");
+          }
+         </script>
+
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- End -->
+
+
+<!-- Footer -->
+      <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                  <h4>BidZone</h4>
+                  <img src="logo.png">
+                  <ul class="info">
+                    <li>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i>
+                      </span>
+                      <span>456,Park Street,Colombo 03.<br>Sri Lanka</span>
+                    </li>
+                    <li>
+                      <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                      <p><a href="tel:+94112548654">+94112548654</a></p>
+                      <p><a href="tel:+94112548700">+94112548700</a></p>
+                    </li>
+                    <li>
+                      <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                      <p><a href="mailto:bidzone@gmail.com">bidzone@gmail.com</a></p>
+                    </li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>services</h4>
+                <ul>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+       
+       <div class="terms">
+        <p><a href="terms and services">Terms and services </a></p>
+       
+       </div>
+       <div class="copyrightText">
+        <p>Copyright @ 2023 BidZone<br>
+           All Rights Reserved.
+        </p>
+  
+       </div>
+       <!-- End -->
+    </body>        
+</html>            

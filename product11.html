@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Product </title>
+    <link rel="stylesheet" href="comment.css">
+    <link rel="stylesheet" href="profileCard.css">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="styleNew.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+
+
+        .container4 {
+            margin-top: 100px;
+            position: relative;
+        }
+
+
+
+
+        .cursor {
+            cursor: pointer;
+        }
+
+
+
+        .column2 {
+            width: 7%;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+        .container1 {
+            width: 75%;
+            margin-top: 0;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+        }
+
+        .container2 {
+            width: 80%;
+            margin-top: 0;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+        }
+
+        .row3 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+
+
+        .column4 {
+            flex: 75%;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+
+        .des {
+            color: grey;
+        }
+
+       
+
+
+        .image {
+            width: 25%;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="hero">
+        <img src="logo.png">
+        <div class="search">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="language">
+
+            <label for="language-select">Language</label>
+            <select id="language-select" name="language">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+
+            </select>
+        </div>
+        <button class="login-button">Login</button>
+        <button class="signup-button">Sign Up</button>
+
+
+    </header>
+
+
+    <ul class="menu1">
+
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="item.html">Item List</a></li>
+        <li><a href="sell.asp">Sell items</a></li>
+        <li><a href="contact.asp">Contact Us</a></li>
+        <li><a href="help.asp">Help</a></li>
+
+    </ul>
+
+
+
+    <div class="container4">
+        <div class="left-column">
+            <div class="mySlides">
+                <img src="https://th.bing.com/th/id/OIP.fIa1JZswYtQVDbAJikCVKwHaFo?pid=ImgDet&rs=1" width="75%" height="75%">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://th.bing.com/th/id/OIP.vG2bjeEgi8CpzG5cdm62AgHaFt?pid=ImgDet&rs=1" width="75%" height="75%">
+            </div>
+
+            <div class="mySlides">
+                <img src="https://content.propertyroom.com/listings/sellers/seller888888946/images/origimgs/silver-coin-set-coins-of-the-twentieth-century-historic-us-collection-includes-silver-888888946_772017920102160543.jpg" width="75%" height="75%">
+            </div>
+
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="column2">
+                    <img class="demo cursor" src="https://th.bing.com/th/id/OIP.fIa1JZswYtQVDbAJikCVKwHaFo?pid=ImgDet&rs=1" style="width:100%" onclick="currentSlide(1)" alt="Swimming pool">
+                </div>
+                <div class="column2">
+                    <img class="demo cursor" src="https://th.bing.com/th/id/OIP.vG2bjeEgi8CpzG5cdm62AgHaFt?pid=ImgDet&rs=1" style="width:100%" onclick="currentSlide(2)" alt="Hotel Rooms">
+                </div>
+                <div class="column2">
+                    <img class="demo cursor" src="https://content.propertyroom.com/listings/sellers/seller888888946/images/origimgs/silver-coin-set-coins-of-the-twentieth-century-historic-us-collection-includes-silver-888888946_772017920102160543.jpg" style="width:100%" onclick="currentSlide(3)" alt="Hotel Rooms">
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+
+            <!-- Product Description -->
+            <div class="product-description">
+
+                <h1>Very Large Coin Collection with 50 plus year collecting</h1>
+                <p>Pre-owned</p>
+            </div>
+
+            <div class="product-color">
+                <span>Color</span><br>
+            </div>
+            <div class="color-choose">
+                <div>
+                    <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                    <label for="red"><span>Red</span></label>
+                </div>
+                <div>
+                    <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                    <label for="blue"><span>Blue</span></label>
+                </div>
+                <div>
+                    <input data-image="black" type="radio" id="black" name="color" value="black">
+                    <label for="black"><span>Black</span></label>
+                </div>
+            </div>
+
+
+
+
+            <br>
+            <div class="product-q">
+                <span>Quantity</span>
+                <div class="counter">
+                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="1">
+                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                </div>
+
+            </div><br><br>
+
+
+            <div>
+
+                <a href="bidProduct11.html" class="cart-btn">Add a bid</a>
+
+            </div><br>
+            <div>
+
+                <a href="checkoutNew1.php" class="cart-btn">Buy it now</a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+        function increaseCount(a, b) {
+            var input = b.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+        }
+
+        function decreaseCount(a, b) {
+            var input = b.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            if (value > 1) {
+                value = isNaN(value) ? 0 : value;
+                value--;
+                input.value = value;
+            }
+        }
+
+    </script>
+
+
+    <div class=" = container1">
+
+        <div class="row3">
+            <div class="column3">
+                <h3>
+                    Shipping:
+                </h3>
+
+            </div>
+
+            <div class="column4">
+                <h3>
+                    RS.450.00 Standard International Shipping.
+
+                </h3>
+                <div class="des">
+                    International shipment of items may be subject to customs processing and additional charges.
+                    Located in: ROORKEE, UTTARAKHAND, India<br /><br />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row3">
+            <div class="column3">
+                <h3>
+                    Delivery:
+
+                </h3>
+
+            </div>
+
+            <div class="column4">
+                <h3>
+                    Estimated between Tue, Jul 10 and Mon, Jul 20 to 11680
+
+
+                </h3>
+                <div class="des">
+                    This item has an extended handling time and a delivery estimate greater than 14 business days.
+                    Please allow additional time if international delivery is subject to customs processing.<br /><br />
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row3">
+            <div class="column3">
+                <h3>
+                    Returns:
+
+                </h3>
+
+            </div>
+
+            <div class="column4">
+                <h3>
+                    14 days returns. Seller pays for return shipping
+
+
+                </h3>
+                <br /><br />
+            </div>
+
+        </div>
+
+
+        <div class="row3">
+            <div class="column3">
+                <h3>
+                    Payments:
+
+                </h3>
+
+            </div>
+
+            <div class="column4">
+
+                <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+
+                </div>
+
+
+
+                <br /><br />
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="container2">
+
+        <div class="row6">
+            <h2>Item description from the seller</h2><br /><br />
+
+            <center> <img src="https://th.bing.com/th/id/R.addf3b43d0511e776a3fb76ee32f9af1?rik=2%2B3QjKUJ51CJQg&pid=ImgRaw&r=0 " alt="coins1"></center><br />
+            <center> <img src="https://image.invaluable.com/housePhotos/bradfordsauction/37/680537/H22021-L220745568.jpg" alt="coins2"></center><br />
+            <center> <img src="https://image.invaluable.com/housePhotos/bradfordsauction/62/670562/H22021-L206563265.jpg" alt="coins3"></center><br />
+        </div>
+
+
+    </div><br /><br /><br />
+
+
+    <div class="contact-card">
+        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19873404/2022/9/10/b4583fe7-8b92-45ab-bf2f-929c6944f4151662787021581VanHeusenNavyBlazer1.jpg" alt="Profile Image" class="profile-image">
+        <div class="profile-info">
+            <div class="profile-name">Emily Victoria</div>
+            <div class="profile-description">
+                Seller ID : S1008<br />
+                Experienced and highly skilled seller dedicated to delivering exceptional products and unparalleled service.
+            </div>
+        </div>
+        <a href="seller2.html"class="contact-button">Contact Seller </a>
+    </div>
+
+
+    <div class="rowComment">
+        <div id="commentSection">
+            <h2 class="heading">Customer Feedback</h2>
+            <!-- Existing comments will be displayed here -->
+        </div>
+
+        <div id="addCommentSection">
+            <h2 class="heading">Send your feedback</h2>
+            <form id="commentForm">
+                <label class="Label" for="name">Name:</label>
+                <input type="text" id="name" required>
+                <br>
+                <label class="Label" for="comment">Comment:</label>
+                <textarea id="comment" required></textarea>
+                <br>
+                <div class="btn-containerComment">
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Cancel" class="cancel-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="comment.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>BidZone</h4>
+                    <img src="logo.png">
+                    <ul class="info">
+                        <li>
+                            <span>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </span>
+                            <span>456,Park Street,Colombo 03.<br>Sri Lanka</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <p><a href="tel:+94112548654">+94112548654</a></p>
+                            <p><a href="tel:+94112548700">+94112548700</a></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <p><a href="mailto:bidzone@gmail.com">bidzone@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>services</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="terms">
+        <p><a href="terms and services">Terms and services </a></p>
+
+    </div>
+    <div class="copyrightText">
+        <p>
+            Copyright @ 2023 BidZone<br>
+            All Rights Reserved.
+        </p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Reset Password form</title>
+        <link rel="stylesheet" href="reset.css">
+        <script src="https://kit.fontawesome.com/249b1682b6.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+     
+<div class="container">
+  <img src="logo.png">
+ <div class="form-box">
+   <h1>Reset Password</h1>
+  
+   <form>
+     
+    <div class="input-field">
+        <i class="fa-solid fa-unlock"></i>
+        <input type="password" placeholder="Enter New Password">
+
+      </div>
+      <div class="input-field">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Confirm New Password">
+      </div>
+            
+        
+     
+     <div class="btn-field">
+         <button type="button">Reset Password</button>
+     </div>
+     
+    
+   </form>
+</div>
+</div>
+
+<script>
+  document.getElementById('resetButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    var newPasswordInput = document.getElementById('newPasswordInput');
+    var confirmPasswordInput = document.getElementById('confirmPasswordInput');
+
+    var newPassword = newPasswordInput.value;
+    var confirmPassword = confirmPasswordInput.value;
+
+    if (newPassword === confirmPassword) {
+      alert('Password reset successfully');
+      newPasswordInput.value = ''; // Clear the input fields
+      confirmPasswordInput.value = '';
+    } else {
+      alert('Passwords do not match');
+    }
+  });
+</script>
+
+  </body>
+  <footer>
+  <div class="copyrightText">
+     <p>Copyright @ 2023 BidZone<br>
+        All Rights Reserved.</p>
+  
+    </div>
+  </footer>
+</html>
